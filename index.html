@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ian.Li 的個人網站：中興大學資訊工程學系、學習技能、專案作品與台中即時天氣。">
+  <title>Ian.Li — 個人網站</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要內容</a>
+  <header class="topbar"><a class="brand" href="#main">IL<span> / PERSONAL SPACE</span></a><nav aria-label="主要導覽"><a href="#profile">關於我</a><a href="#skills">技能</a><a href="#projects">作品</a></nav><span class="edition">NCHU · CS</span></header>
+  <main id="main">
+    <div class="intro-line"><span>個人網站 / IAN.LI</span><span>TAICHUNG, TAIWAN</span></div>
+    <div class="main-grid">
+      <section id="profile" class="profile panel">
+        <div class="eyebrow">01 / PROFILE</div>
+        <div class="identity"><span class="monogram" aria-hidden="true">IL.</span><span class="student-tag">資訊工程學系 · 學生</span></div>
+        <h1>你好，我是<br><span>Ian.Li</span><span class="name-dot">.</span></h1>
+        <p class="intro">歡迎來到我的個人空間。<br>這裡記錄我的學習技能與課程作品。</p>
+        <dl class="details"><div><dt>學校</dt><dd>中興大學</dd></div><div><dt>科系</dt><dd>資訊工程學系</dd></div><div><dt>學號</dt><dd class="number">5115056026</dd></div><div><dt>性別</dt><dd>男</dd></div></dl>
+        <a class="email" href="mailto:w115056026@mail.nchu.edu.tw"><span class="eyebrow">聯絡信箱</span><span>w115056026@mail.nchu.edu.tw ↗</span></a>
+      </section>
+      <div class="live-column">
+        <section class="clock panel" aria-labelledby="clock-title">
+          <div class="section-top"><h2 id="clock-title" class="eyebrow">02 / 此刻時間</h2><span class="timezone">台灣 · UTC+8</span></div>
+          <div class="date-row"><span id="date">讀取日期中</span><span id="weekday"></span></div>
+          <time id="clock" class="digits" aria-label="台灣目前時間">--:--<span class="seconds">:--</span></time>
+          <div class="clock-caption"><span>HOURS / MINUTES / SECONDS</span><span>每秒更新</span></div>
+          <div class="day-line" aria-hidden="true"><span id="day-progress"></span></div>
+          <div class="day-label"><span>00:00</span><span id="day-message">今天，持續前進。</span><span>24:00</span></div>
+        </section>
+        <section class="weather panel" aria-labelledby="weather-title">
+          <div class="section-top"><h2 id="weather-title" class="eyebrow">台中市 · 目前天氣</h2><button id="refresh" type="button">重新整理 ↻</button></div>
+          <div class="weather-main"><span id="weather-icon" class="weather-icon" aria-hidden="true">◎</span><span id="temperature">--<small>°C</small></span><span id="condition">取得天氣中</span></div>
+          <div class="weather-details"><span>體感 <strong id="feels">--</strong></span><span>濕度 <strong id="humidity">--</strong></span><span>風速 <strong id="wind">--</strong></span></div>
+          <div class="weather-footer"><p id="weather-status" role="status">正在連線取得最新資料…</p><a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo ↗</a></div>
+        </section>
+      </div>
+    </div>
+    <section id="skills" class="skills-section"><div class="section-heading"><h2><span>03 / SKILLS</span>學習技能</h2><p>本次網站使用的技術</p></div><div class="skill-grid"><article><span class="skill-symbol">&lt;/&gt;</span><h3>HTML</h3><p>以語意化標籤建立個人資料、技能與作品的內容結構。</p><span class="skill-note">結構與內容</span></article><article><span class="skill-symbol">{ }</span><h3>CSS</h3><p>運用 Grid、Flexbox 與媒體查詢，讓版面適應不同螢幕。</p><span class="skill-note">版面與視覺</span></article><article><span class="skill-symbol">JS</span><h3>JavaScript</h3><p>透過 DOM 更新、計時器與 Fetch API 呈現時間和天氣。</p><span class="skill-note">互動與資料</span></article></div></section>
+    <section id="projects" class="projects-section"><div class="section-heading"><h2><span>04 / PROJECTS</span>專案作品</h2><p>課程實作紀錄</p></div><article class="project panel"><div class="project-index">01</div><div class="project-info"><span class="eyebrow">DIC-1 · 個人作業</span><h3>個人入口網站與即時儀表板</h3><p>整合個人介紹、即時時鐘與台中天氣。使用原生網頁技術製作，可直接在本機瀏覽。</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Weather API</span></div></div><a class="project-link" href="#main">瀏覽本作品 <span aria-hidden="true">↗</span></a></article></section>
+  </main>
+  <footer><span>© <span id="year"></span> Ian.Li</span><span>中興大學 · 資訊工程學系</span><a href="mailto:w115056026@mail.nchu.edu.tw">聯絡我 ↗</a></footer>
+  <noscript><p class="noscript">請啟用 JavaScript，以顯示即時日期、時間與天氣。</p></noscript>
+</body>
+</html>
