@@ -6,3 +6,7 @@
 - **示範教師：** Huan Chen
 - **儲存庫網址：** [https://github.com/Ian1114/hw1_weather](https://github.com/Ian1114/hw1_weather)
 - **Live Demo Page：** [https://ian1114.github.io/hw1_weather/#main](https://ian1114.github.io/hw1_weather/#main)
+
+## 網站截圖
+
+![Ian.Li 個人網站：個人資料、即時時鐘、台中天氣與學習技能](website-screenshot.png)
